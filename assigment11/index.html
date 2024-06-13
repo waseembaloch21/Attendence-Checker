@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendence Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <h1>Attendence Checker</h1>
+    <form id="formAttendence" onsubmit="MarkedAttendence()">
+        <label>Name:</label>
+        <input type="text" id="name">
+        <label>Status</label>
+        <select id="status">
+            <option value="present">present</option>
+            <option value="absent">absent</option>
+            <option value="late">late</option>
+        </select>
+
+        <button type="submit">Marked Attendence</button>
+    </form>
+
+    <div id="AttendanceList">
+        <h3>Attendence list</h3>
+        <ul id="list"></ul>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
